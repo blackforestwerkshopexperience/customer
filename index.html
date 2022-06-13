@@ -1,632 +1,633 @@
 <head>
-  <META NAME="robots" CONTENT="noindex,nofollow">
-    
-<style>
-body {
-  font-family: Arial, sans-serif;
-  }
-p {
-  font-family: Arial, sans-serif;
-  line-height: 180%;
-  }
-ol {
-  font-family: Arial, sans-serif;
-  list-style-type: decimal-leading-zero;
-  line-height: 150%;
-  }
-ol.sections {
-  font-family: Arial, sans-serif;
-  list-style-type: upper-alpha;
-  line-height: 180%;
-  }
-ol.timeline {
-  font-family: Arial, sans-serif;
-  /*list-style-type: decimal-leading-zero;*/
-  max-width: 100%;
-  counter-reset: my-awesome-counter;
-  list-style: none;
-  padding-left: 40px;
-  }
-ol.timeline li {
-  margin: 0 0 0.5rem 0; 
-  counter-increment: my-awesome-counter;
-  position: relative;ter-increment: my-awesome-counter;
-}
-ol.timeline li::before {
-  content: counter(my-awesome-counter);
-  color: #EBEDEF;
-  font-size: 1.0rem;
-  font-weight: bold;
-  position: absolute;
-  --size: 25px;
-  left: calc(-1 * var(--size) - 10px);
-  line-height: var(--size);
-  width: var(--size);
-  height: var(--size);
-  top: 0;
-  transform: rotate(-10deg);
-  background: #34495E;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 1px 1px 0 #999;
-}
-ol.email {
-  font-family: Arial, sans-serif;
-  list-style-type: decimal-leading-zero;
-  line-height: 180%;
-  }
-ol.audio {
-  font-family: Arial, sans-serif;
-  list-style-type: decimal-leading-zero;
-  }
-ul {
-  font-family: Arial, sans-serif;
-  list-style-type: circle;
-  line-height: 180%;
-  }
-h1 {
-  font-family: Arial, sans-serif;
-  padding: 10px;
-  text-align: center;
-  font-size: 30px;
-  }
-h2 {
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
-  padding: 10px;
-  text-align: left;
-  background: #34495E;
-  color: #EBEDEF;
-  font-size: 18px;
-  margin-bottom: 30px;
-  margin-top: 45px;
-  }
-  h3 {
-  margin-top: 45px;
-  }
-  table, th, td {
-  border: 1px solid #EAECEE;
-  border-collapse: collapse;
-  }
-th, td {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 20px;
-  }
-p.audiotext {
+    <META NAME="robots" CONTENT="noindex,nofollow">
+      
+  <style>
+  body {
     font-family: Arial, sans-serif;
-    font-style: italic;
-    color: #1B4F72;
-    /*font-size: 14px;*/
-  }
-p.audiocomment {
-    font-family: Arial, sans-serif;
-    color: #117A65;
-    /*font-size: 14px;*/
-  }
-p.quote {
-    font-family: Arial, sans-serif;
-    background: #FADBD8;
-    /*font-size: 14px;*/
-    padding: 15px;
-    color: #A93226;
-    border-left: 8px solid #A93226;
-    width: 30%;
-    margin: 30px;
-  }
-p.imagetext {
-    font-family: Arial, sans-serif;
-    background:  #d6dbdf;
-    /*font-size: 14px;*/
-    width: 60%;
-    padding: 10px;
-    margin-left: 20%;
-    color:  #17202a;
-    border-left: 8px solid  #17202a;
-  }
-.law {
-    font-family: Arial, sans-serif;
-    font-style: bold;
-    background: #A9CCE3;
-    /*font-size: 14px;*/
-    padding: 5px;
-    color: #000000;
-    border-left: 8px solid #154360;
-    width: 70%;
-  }
-.legalcode {
-    font-family: Arial, sans-serif;
-    margin: 15px;
-    background: #A9CCE3;
-    /*font-size: 14px;*/
-    padding: 10px;
-    color: #000000;
-    border-left: 8px solid #154360;
-    margin: 20px;
-  }   
-p.legalcode {
-    border: none;
     }
-h2.legalcode {
-    border: none;
-    text-align: center;
-    font-size: 20px;
-    margin: 0px;
-    padding: 0px;
-    }
-h3.legalcode {
-    border: none;
-    margin-top: 60px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    }
-ul.legalcode {
-    border: none;
+  p {
+    font-family: Arial, sans-serif;
     line-height: 180%;
-    list-style-type: none;
-    margin-right: 10px;
-    padding: 0px;
     }
-.indent {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-#shopday {
-    color: #1B4F72;
-    background-color: #fcf3cf;
-}
-#mark {
-    color: #1B4F72;
-    background-color: #fcf3cf;
-}
-#sectionnote {
-    color: #1B4F72;
-    background-color: #fcf3cf;
-    font-size: 18px;
-    font-weight: bold;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 150%;
-}
-
-.dearviewer {
-    color:  #145a32 ;
-    background-color: #abebc6;
-    font-size: 14px;
-    /*font-weight: bold;*/
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 150%;
-    border-left: 8px solid #145a32;
-    width: 70%;
-    text-align: left;
-}
-.lastemail {
+  ol {
     font-family: Arial, sans-serif;
-    background:  #d2b4de;
-    /*font-size: 14px;*/
-    padding: 15px;
-    color:  #512e5f;
-    border-left: 8px solid  #512e5f;
-    width: 70%;
-    margin: 30px;
+    list-style-type: decimal-leading-zero;
+    line-height: 150%;
+    }
+  ol.sections {
+    font-family: Arial, sans-serif;
+    list-style-type: upper-alpha;
+    line-height: 180%;
+    }
+  ol.timeline {
+    font-family: Arial, sans-serif;
+    /*list-style-type: decimal-leading-zero;*/
+    max-width: 100%;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px;
+    }
+  ol.timeline li {
+    margin: 0 0 0.5rem 0; 
+    counter-increment: my-awesome-counter;
+    position: relative;ter-increment: my-awesome-counter;
+  }
+  ol.timeline li::before {
+    content: counter(my-awesome-counter);
+    color: #EBEDEF;
+    font-size: 1.0rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 25px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    transform: rotate(-10deg);
+    background: #34495E;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+  }
+  ol.email {
+    font-family: Arial, sans-serif;
+    list-style-type: decimal-leading-zero;
+    line-height: 180%;
+    }
+  ol.audio {
+    font-family: Arial, sans-serif;
+    list-style-type: decimal-leading-zero;
+    }
+  ul {
+    font-family: Arial, sans-serif;
+    list-style-type: circle;
+    line-height: 180%;
+    }
+  h1 {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    }
+  h2 {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
     text-align: left;
-  } 
-#breakinnarrative {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color:  #566573;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-#breakinheader {
-    color:  #784212;
-    background-color:  #f8c471;
-}
-#related {
-    color:  #784212;
-    background-color:  #f5b7b1;
-}
-
-
-
-</style>
-</head>
-
-<a name="top"></a>
-<h1>Doing business with<p>BLACK FOREST WERKSHOP</p></h1>
-<p></p>
-
-
+    background: #34495E;
+    color: #EBEDEF;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    }
+    h3 {
+    margin-top: 45px;
+    }
+    table, th, td {
+    border: 1px solid #EAECEE;
+    border-collapse: collapse;
+    }
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    }
+  p.audiotext {
+      font-family: Arial, sans-serif;
+      font-style: italic;
+      color: #1B4F72;
+      /*font-size: 14px;*/
+    }
+  p.audiocomment {
+      font-family: Arial, sans-serif;
+      color: #117A65;
+      /*font-size: 14px;*/
+    }
+  p.quote {
+      font-family: Arial, sans-serif;
+      background: #FADBD8;
+      /*font-size: 14px;*/
+      padding: 15px;
+      color: #A93226;
+      border-left: 8px solid #A93226;
+      width: 30%;
+      margin: 30px;
+    }
+  p.imagetext {
+      font-family: Arial, sans-serif;
+      background:  #d6dbdf;
+      /*font-size: 14px;*/
+      width: 60%;
+      padding: 10px;
+      margin-left: 20%;
+      color:  #17202a;
+      border-left: 8px solid  #17202a;
+    }
+  .law {
+      font-family: Arial, sans-serif;
+      font-style: bold;
+      background: #A9CCE3;
+      /*font-size: 14px;*/
+      padding: 5px;
+      color: #000000;
+      border-left: 8px solid #154360;
+      width: 70%;
+    }
+  .legalcode {
+      font-family: Arial, sans-serif;
+      margin: 15px;
+      background: #A9CCE3;
+      /*font-size: 14px;*/
+      padding: 10px;
+      color: #000000;
+      border-left: 8px solid #154360;
+      margin: 20px;
+    }   
+  p.legalcode {
+      border: none;
+      }
+  h2.legalcode {
+      border: none;
+      text-align: center;
+      font-size: 20px;
+      margin: 0px;
+      padding: 0px;
+      }
+  h3.legalcode {
+      border: none;
+      margin-top: 60px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0px;
+      }
+  ul.legalcode {
+      border: none;
+      line-height: 180%;
+      list-style-type: none;
+      margin-right: 10px;
+      padding: 0px;
+      }
+  .indent {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #shopday {
+      color: #1B4F72;
+      background-color: #fcf3cf;
+  }
+  #mark {
+      color: #1B4F72;
+      background-color: #fcf3cf;
+  }
+  #sectionnote {
+      color: #1B4F72;
+      background-color: #fcf3cf;
+      font-size: 18px;
+      font-weight: bold;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 150%;
+  }
   
-<h2>Sections</h2>
-  <ol class="sections">
-    <li><a href="#audio">Audio Recordings</a></li>
-    <li><a href="#openrecords">Open Records</a></li>
-</ol>
-
-
-<h2><a name="audio">AUDIO RECORDINGS</a></h2>
-
-
-
-<h3>Discussions between Lee Rector, Owner of Black Forest Werkshop, and a former customer.</h3>
-
-<ol class="audio">
+  .dearviewer {
+      color:  #145a32 ;
+      background-color: #abebc6;
+      font-size: 14px;
+      /*font-weight: bold;*/
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 150%;
+      border-left: 8px solid #145a32;
+      width: 70%;
+      text-align: left;
+  }
+  .lastemail {
+      font-family: Arial, sans-serif;
+      background:  #d2b4de;
+      /*font-size: 14px;*/
+      padding: 15px;
+      color:  #512e5f;
+      border-left: 8px solid  #512e5f;
+      width: 70%;
+      margin: 30px;
+      text-align: left;
+    } 
+  #breakinnarrative {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color:  #566573;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #breakinheader {
+      color:  #784212;
+      background-color:  #f8c471;
+  }
+  #related {
+      color:  #784212;
+      background-color:  #f5b7b1;
+  }
   
-<li><b>Length 00:00:39</b> </b>| 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/headlights-require-special-lightbulbs-could-not-install-them.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-So that's, that's definitely an HID headlight. The the, the halogen bulbs won't even stay in there. There's no way to even put them in. So I'm thinking they just simply sent you the wrong ones. Hopefully, they I have no idea what the price differences between the HID versus those halogen ones non HID. Oh, hopefully you paid the cheaper of the price. Hopefully these you might look them up and see if they sell for more money. And if they are worth more money then you could tell them hey, these are worth more money. All I want to get out of them is x.</p> 
-
-
-
-<br><br>
-
-
-<li><b>Length 00:00:51</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/explanation-for-new-electrical-error-foglights.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-So that's, that's definitely an HID headlight. The the, the halogen bulbs won't even stay in there. There's no way to even put them in. So I'm thinking they just simply sent you Here's your original foglights your fog lights. They have the LED light emitting diode they have the and with those in there, your car is now telling you that you have burned out bulbs in your fog lights. *** Okay, am I getting error messages or anything? Why? *** Because of that, because they're the LED ones and not the normal these original foglights or halogen. And since those are LED then the the resistance in that system is different. And so it thinks it has burned out bulbs they do work all the bulbs work.</p> 
-
-
-
-<br><br>
-
-<li><b>Length 00:00:28</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/black-front-grill-parts-not-installed.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Okay, what about the grill? I gave you the grill parts. There's also the grill part. *** Yeah, are those new ones? *** Yeah. That was one of the first things that we talked about was to replace it with the black pieces. *** I'm drawing a blank on that one.</p> 
-
-
-<br><br>
-
-<li><b>Length 00:00:50</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/explanation-fog-light-trim-not-fixed.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-I think this is for the side. This is for this side. And it doesn't really matter. fit in there so it's a different curve right here it's just a completely different maybe that these are designed to fit that aftermarket bumper that you had *** hrm no, they're just, again I searched for these by the BMW part number.</p>
   
-<br><br>
-
-<li><b>Length 00:00:07</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/no-work-was-done-on-the-rear-bumper.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-So no, no work at all was done on the rear of the car, on the rear bumper? *** Right *** Okay</p>
-
-<br><br>
-
-<li><b>Length 00:02:05</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/personal-note-rear-not-fixed-fog-lights-elec-error.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext">Okay so I'm picking up my car. He did no work on the rear bumper at all. So that's the rear bumper, the rear labor, the tow hook, no work was done on the rear bumper. He did use the fog lights that I purchased not the fog lights he didn't buy any fog lights so and those foglights work but they show an error message on the BMWs computer because the fog lights even though they work and they put out light they are LED and not other types of bulbs so the BMW computer is confused. There's nothing wrong with the two [fog lights]. The fog lights that he took out aren't damaged. Wow.</p>
-
-<br><br>
-
-<li><b>Length 00:00:47</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/original-fog-lights-not-damaged-why-not-reinstall-them-if-new-ones-cause-error.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Hey Lee, I have a question for you, sorry. So, so these are the these are the fog lights that I purchased and brought to you but they're causing an error message so why not just keep the original fog lights if they're undamaged. The fog lights that are in the trunk why did you switch them so if those are causing an error message on the computer why switch them out, why not just keep the original fog lights back when they're not damaged? *** Yeah we had no idea that they were going to give us problems so we just stuck them in there and then once it got all stuck in there we realized it was trouble.</p>
-
-<br><br>
-
-<li><b>Length 00:00:27</b> | 
-  <a href="https://github.com/blackforestwerkshopexperience/customer/audio/recycle-the-still-usable-foglights.mp3" target="_blank">
+  
+  </style>
+  </head>
+  
+  <a name="top"></a>
+  <h1>Doing business with<p>BLACK FOREST WERKSHOP</p></h1>
+  <p></p>
+  
+  
+    
+  <h2>Sections</h2>
+    <ol class="sections">
+      <li><a href="#audio">Audio Recordings</a></li>
+      <li><a href="#openrecords">Open Records</a></li>
+  </ol>
+  
+  
+  <h2><a name="audio">AUDIO RECORDINGS</a></h2>
+  
+  
+  
+  <h3>Discussions between Lee Rector, Owner of Black Forest Werkshop, and a former customer.</h3>
+  
+  <ol class="audio">
+    
+  <li><b>Length 00:00:39</b> </b>| 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/headlights-require-special-lightbulbs-could-not-install-them.mp3" target="_blank">
   Play Audio Clip</a><br> 
-
+  
   <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-    Want to throw these in the recycling or do you want me to? *** Throw them in the back with the rest of the junk. *** These are still good just because one of them's broke off the rest of it still usable, wonderful world of plastic. </p>
-
-
-<br><br>
-
-<li><b>Length 00:00:51</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/owner-found-fog-light-cables-that-were-not-installed.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-There may be something with these things here. I have no idea what these things are for. *** I don't know what you took that off of. *** Well, it it was in your car. *** They were all packaged together. *** Ok, so *** I guess, yeah. I don't know if he's came with the fog lights or the headlights because it may be that these things need to be put in line with the fog light bulb then that may eliminate the warning I know what's in there there's a resistor in there.</p>
-
-<br><br>
-
-<li><b>Length 00:00:15</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/notice-fog-lights-flicker-when-car-turned-off.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Fog lights weird flickering. *** Yeah ***  Yeah, I noticed there's the flickering in the fog lights and the cars off. Wouldn't that drain my battery?</p>
-
-<br><br>
-
-<li><b>Length 00:01:20</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/personal-note-rear-unused-parts-found-lights-flicker-when-car-off-installing-overlooked-parts.mp3" target="_blank">
-Play Audio Clip</a><br>
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-When we were going through the parts that I brought that were sitting in the back of my car we found unplugged, unused parts, unused wires and used cables, and I noticed that the fog lights on the front of my car were flickering even though the car was not on, which I'm definitely concerned would cause some electrical errors or run down the battery of my car if there's lights that are always on. Anyway, Lee took a look at those wires decided that maybe they hooked up to the fog lights that he put into my car, the ones that I purchased, and maybe if we connect and he surmised that if we connect those wires, maybe that'll keep the error message addition showing up on the BMWs computer and stop the flickering. So, now he brought out, Lee and one of his shop hands are working on switching out walking on putting that little wire connector behind the fog lights and hopefully that will stop the flickering and that will keep the error messages from showing up on the car's computer.</p>
-
-<br><br>
-
-<li><b>Length 00:02:01</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/owner-technician-customer-work-to-fix-the-flickering-fog-lights.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Before you turn the lights on before you turn them on its flickering and *** I don't see him flickering anymore. ***  Oh, that's good. Turn the car on but not little fog lights yeah, see they flicker before he turns the fog lights on? *** Oh, yeah, they're still flickering. *** You see that?  *** Yeah, they are. *** I don't see it anymore. ***  When the cars on they do before you turn the headlights on before we turn the fog lights on, it still flickers? *** Well, I could check in with junkyard guy and see if he's got a used driver's side or put the stock ones back in there. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff. *** That's the same stuff that I think StateFarm asks you to buy though aftermarket stuff. *** But they do that crap all the time. And you know what, I charge the hell out of them for having to mess with it.</p>
-
-
-<br><br>
+  So that's, that's definitely an HID headlight. The the, the halogen bulbs won't even stay in there. There's no way to even put them in. So I'm thinking they just simply sent you the wrong ones. Hopefully, they I have no idea what the price differences between the HID versus those halogen ones non HID. Oh, hopefully you paid the cheaper of the price. Hopefully these you might look them up and see if they sell for more money. And if they are worth more money then you could tell them hey, these are worth more money. All I want to get out of them is x.</p> 
   
-<li><b>Length 00:00:22</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/owner-offered-to-let-me-leave-with-the-electrical-issues-unresolved.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Well, I could check in with junkyard guy and see if he's got a used driver's side or put the stock ones back in there. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff.</p>
-
-
-<br><br>
-        
-<li><b>Length 00:00:46</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/owner-advising-me-on-how-to-repair-damage-he-was-hired-to-fix.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-How much are these pieces? *** No idea. I haven't even looked them up. You know, I figured the aftermarket ones of those ought to fit. They should just pop in there. And so if you want to just check to see how much they are. I mean it's easy enough just to pop them in place. *** That's what I thought I did that's for the ones that I brought *** Well they're just for the wrong front end. Okay, and sometimes BMW will change the production and how they do things in the middle of a year. It can be the same year model of car, but they'll change parts in the middle of production on how stuff is so you got to really watch the production dates to get that stuff done.</p>
   
-
-<br><br>
-        
-
-<li><b>Length 00:00:17</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/owner-changes-story-admits-he-knew-about-the-fog-lights-flickering-before-i-pointed-it-out-to-him.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Flickering, flickering *** That's just weird. *** I didn't really ever notice it until I got down on my knees and was looking at it that close with one of the guys that they flickered and I thought they were talking about when they just ran.</p>
-
-<br><br>
-
-
-<li><b>Length 00:03:29</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/confusing-conversation-when-reviewing-the-final-invoice-i-dont-understand-anything-that-the-owner-is-explaining.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Uhm, there's a chance that you can call this insurance company and tell them hey, you guys didn't pay the administrative fees for all the legwork Lee had to do on this thing. *** Can you document that out? So I know what I can ask them for like realistically because if I call them and say that then they might say well, how many hours did Lee do this? And I have Oh, is that marked down on there already? *** Yeah *** Okay. *** But I had asked them for 250 bucks only put 150 on there. And mostly that was in dealing with the insurance company but at least I got 415 bucks out of them which was good. The other part that they had screwed up was that there was an aluminum piece behind the front bumper that was bent back. And so they found a used one somewhere up in Fort Worth. And I think they said it was like 130 bucks. They said alright, it's 130 bucks. We'll pay you 25% Extra. Okay, what about shipping? Who's gonna pay for that? You know, so what am I gonna do? You know, jump through these hoops again, I have to call them. You know, it's just a nightmare dealing with these people, you know that. And so, I found one that I could have delivered, it costs a little bit more money between that part and adding the 25% that came up to the price of a new one, I was like, well, probably should have just put a new one in it, but it doesn't matter, it's as good as new. It's just an aluminum bar that goes back there. So the long and short of it is, is that they didn't pay enough for that part. *** They didn't pay enough for the the thing behind the bumper? *** Yeah, I'll highlight it. This one right here. I'm gonna just... I'm not going to highlight the 150 because they'll want a copy of this maybe. And so I'm not going to bring that to their attention by highlighting it. And you can tell them that you know, you you can tell them Well, I still owe him the 250 bucks. I need you to send me that money so I can pay him and if they send it to you, keep it and then the supplement thing they should have emailed you a copy of that supplement did they? It's when they do a supplement what they do is they send you the entire estimate over again and added on those things I don't know if they ever sent you a copy of that *** I would have to check with them. *** You can check with them and see things send you a copy and then that way you can see exactly how much of that $415 They have budgeted for that I think this is gonna be a little bit more so they can owe you a few more bucks for that.</p>
-
-
-<br><br>
-
-
-<li><b>Length 00:01:49</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/finding-out-how-much-was-owed.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-There's a balance of $2268.46 *** Oh, uh, you told me $2051.96 and that was the, this is the amount that you told me on the phone before I came here so the check was pre-cut. *** Okay. So then that's still gonna leave *** Yeah, twenty, that's the amount that you gave me on the phone this afternoon right when you said that my car was ready to come pick up *** Yeah, I totaled it up but I just didn't have that used headlight put in there. *** I'd have to go home to get another check or, I came prepared with the amount that you told me to bring. *** Okay. Well, I probably should have called you and told you before you came down here. *** Is that *** So that's how much the remaining is *** Can I uhm, can I borrow one of these *** Sure. And I apologize I had completely forgotten about that. Josh normally puts parts on tickets. I really don't do his job. He usually puts them there, but he wasn't involved in getting these headlights. *** Oh, okay *** and then after he had it all totaled up he was like Hey, did you get that headlight on there? Nope, that's ok, ha ha, shit!</p>
-
-<br><br>
-
-
-<li><b>Length 00:00:05</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/your-car-looks-good.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Anything else I should know about my car? *** The car looks good.</p>
-
-
-<br><br>
-
-<li><b>Length 00:01:02</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/implies-the-delay-was-my-my-fault-extended-rental-car-time-wasnt-easy.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Alright, well, I think apologizing for taking as long as it is did might be an order so, I'm sorry it dragged out as long as it did. And uh, my tip for the future, never tell anybody to take their time. It is like, well, you know not hurry. I got this rental car for as long as I need it. And you know, honestly, I didn't think you were in a rental car. I thought you were in a family member's car. Somebody loaned you a car? I didn't think rental car was really anywhere in the picture. *** Oh, no, it was a big ordeal when I dropped my car off to get the rental car here. *** Right? I remember that. Yeah, so but I figured that maybe you had access to the car because honestly, insurance companies and rental cars they're usually like after 10 days. They're done. They don't want to pay any more for the rental car. So whatever you did to get a rental car for as long as you had it. You definitely got way more than I've ever seen anybody else get. *** It wasn't easy.</p>
-
-
-<br><br>
-
-
-<li><b>Length 00:01:08</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/rear-bumper-not-repaired-front-bumper-not-replaced-trying-to-get-more-from-insurance.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-So uh, so yeah, and I know that the end bodywork isn't an absolutely perfect you know, we talked about that in the beginning. You know Dominique does the workout side over there? *** Well the end body work wasn't done at all. You said that you skipped that part all together. *** Well the the front end. The front bumper and all that stuff. *** I thought you were talking about the rear bumper. ***
-Oh yeah, fixing that whole front bumper, you know, I hope you like it, I think he did a pretty good job. All things considered considering what he had to work with that front bumper was pretty mangled up. And he got it straightened up pretty good. You know, just stay away from the curb. *** So he didn't, he didn't have to, like replace it with a bumper cover. Like, you don't have to replace any of the parts for the bumper, you fixed your original one. He fixed the original one he didn't actually buy. So then you just needed that little metal piece behind the bumper, or you didn't actually need any parts for the bumper. *** Yeah. And honestly, I mean, I I called in, I was trying to get more money out of the insurance company for you, I wanted to get as much as I could out of them for you to discount this down. And I didn't get it nearly as much as I tried to.</p>
   
-
-<br><br>
-
-
-<li><b>Length 00:00:25</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/i-have-concerns-that-my-fog-light-cables-are-just-hanging-and-not-secured-to-something.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-  So the original cables, I guess the original cables that were plugged into the foglights, were they hanging, or were they somehow just pushed up like taped or to something on the inside of the car? *** No, they were just kind of hanging down there. *** The wires were always just hanging down there. *** Okay *** They're just always kind of flopping around. *** Maybe I'll go buy some duct tape and hang them up or something. *** I'm sure they'll be fine.</p>
+  <br><br>
   
-<br><br>
-
-
-<li><b>Length 00:00:24</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/referring-me-to-the-salvage-guy-to-buy-parts-for-repairs-he-was-suppossed-to-do.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-  Right, we'll check with Russell and ask if he has, send him a picture of your front bumper and say, I would like to know if you have a used grille. For my front bumper *** The fog light trim *** Yes. If you have that. Okay, if you're not happy with those fog lights, then ask them also. So do you have a used driver side fog light.</p>
   
-
-<br><br>
-
-<li><b>Length 00:00:19</b> | 
-  <a href="https://github.com/blackforestwerkshopexperience/customer/audio/i-dont-ever-get-involved-in-body-repair-stuff.mp3" target="_blank">
+  <li><b>Length 00:00:51</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/explanation-for-new-electrical-error-foglights.mp3" target="_blank">
   Play Audio Clip</a><br> 
-
+  
   <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-    Alright, I'm glad you're finally back in your car *** Me too *** Yeah, I think Josh would prefer that I don't ever get involved in any body repair stuff. I'm just trying to help people out, you know, try to help you out with a good price to get this stuff done.</p>
+  So that's, that's definitely an HID headlight. The the, the halogen bulbs won't even stay in there. There's no way to even put them in. So I'm thinking they just simply sent you Here's your original foglights your fog lights. They have the LED light emitting diode they have the and with those in there, your car is now telling you that you have burned out bulbs in your fog lights. *** Okay, am I getting error messages or anything? Why? *** Because of that, because they're the LED ones and not the normal these original foglights or halogen. And since those are LED then the the resistance in that system is different. And so it thinks it has burned out bulbs they do work all the bulbs work.</p> 
+  
+  
+  
+  <br><br>
+  
+  <li><b>Length 00:00:28</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/black-front-grill-parts-not-installed.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Okay, what about the grill? I gave you the grill parts. There's also the grill part. *** Yeah, are those new ones? *** Yeah. That was one of the first things that we talked about was to replace it with the black pieces. *** I'm drawing a blank on that one.</p> 
+  
+  
+  <br><br>
+  
+  <li><b>Length 00:00:50</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/explanation-fog-light-trim-not-fixed.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  I think this is for the side. This is for this side. And it doesn't really matter. fit in there so it's a different curve right here it's just a completely different maybe that these are designed to fit that aftermarket bumper that you had *** hrm no, they're just, again I searched for these by the BMW part number.</p>
+    
+  <br><br>
+  
+  <li><b>Length 00:00:07</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/no-work-was-done-on-the-rear-bumper.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  So no, no work at all was done on the rear of the car, on the rear bumper? *** Right *** Okay</p>
+  
+  <br><br>
+  
+  <li><b>Length 00:02:05</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/personal-note-rear-not-fixed-fog-lights-elec-error.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext">Okay so I'm picking up my car. He did no work on the rear bumper at all. So that's the rear bumper, the rear labor, the tow hook, no work was done on the rear bumper. He did use the fog lights that I purchased not the fog lights he didn't buy any fog lights so and those foglights work but they show an error message on the BMWs computer because the fog lights even though they work and they put out light they are LED and not other types of bulbs so the BMW computer is confused. There's nothing wrong with the two [fog lights]. The fog lights that he took out aren't damaged. Wow.</p>
+  
+  <br><br>
+  
+  <li><b>Length 00:00:47</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/original-fog-lights-not-damaged-why-not-reinstall-them-if-new-ones-cause-error.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Hey Lee, I have a question for you, sorry. So, so these are the these are the fog lights that I purchased and brought to you but they're causing an error message so why not just keep the original fog lights if they're undamaged. The fog lights that are in the trunk why did you switch them so if those are causing an error message on the computer why switch them out, why not just keep the original fog lights back when they're not damaged? *** Yeah we had no idea that they were going to give us problems so we just stuck them in there and then once it got all stuck in there we realized it was trouble.</p>
+  
+  <br><br>
+  
+  <li><b>Length 00:00:27</b> | 
+    <a href="https://blackforestwerkshopexperience.github.io/customer/audio/recycle-the-still-usable-foglights.mp3" target="_blank">
+    Play Audio Clip</a><br> 
+  
+    <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+      Want to throw these in the recycling or do you want me to? *** Throw them in the back with the rest of the junk. *** These are still good just because one of them's broke off the rest of it still usable, wonderful world of plastic. </p>
+  
+  
+  <br><br>
+  
+  <li><b>Length 00:00:51</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/owner-found-fog-light-cables-that-were-not-installed.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  There may be something with these things here. I have no idea what these things are for. *** I don't know what you took that off of. *** Well, it it was in your car. *** They were all packaged together. *** Ok, so *** I guess, yeah. I don't know if he's came with the fog lights or the headlights because it may be that these things need to be put in line with the fog light bulb then that may eliminate the warning I know what's in there there's a resistor in there.</p>
+  
+  <br><br>
+  
+  <li><b>Length 00:00:15</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/notice-fog-lights-flicker-when-car-turned-off.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Fog lights weird flickering. *** Yeah ***  Yeah, I noticed there's the flickering in the fog lights and the cars off. Wouldn't that drain my battery?</p>
+  
+  <br><br>
+  
+  <li><b>Length 00:01:20</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/personal-note-rear-unused-parts-found-lights-flicker-when-car-off-installing-overlooked-parts.mp3" target="_blank">
+  Play Audio Clip</a><br>
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  When we were going through the parts that I brought that were sitting in the back of my car we found unplugged, unused parts, unused wires and used cables, and I noticed that the fog lights on the front of my car were flickering even though the car was not on, which I'm definitely concerned would cause some electrical errors or run down the battery of my car if there's lights that are always on. Anyway, Lee took a look at those wires decided that maybe they hooked up to the fog lights that he put into my car, the ones that I purchased, and maybe if we connect and he surmised that if we connect those wires, maybe that'll keep the error message addition showing up on the BMWs computer and stop the flickering. So, now he brought out, Lee and one of his shop hands are working on switching out walking on putting that little wire connector behind the fog lights and hopefully that will stop the flickering and that will keep the error messages from showing up on the car's computer.</p>
+  
+  <br><br>
+  
+  <li><b>Length 00:02:01</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/owner-technician-customer-work-to-fix-the-flickering-fog-lights.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Before you turn the lights on before you turn them on its flickering and *** I don't see him flickering anymore. ***  Oh, that's good. Turn the car on but not little fog lights yeah, see they flicker before he turns the fog lights on? *** Oh, yeah, they're still flickering. *** You see that?  *** Yeah, they are. *** I don't see it anymore. ***  When the cars on they do before you turn the headlights on before we turn the fog lights on, it still flickers? *** Well, I could check in with junkyard guy and see if he's got a used driver's side or put the stock ones back in there. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff. *** That's the same stuff that I think StateFarm asks you to buy though aftermarket stuff. *** But they do that crap all the time. And you know what, I charge the hell out of them for having to mess with it.</p>
+  
+  
+  <br><br>
+    
+  <li><b>Length 00:00:22</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/owner-offered-to-let-me-leave-with-the-electrical-issues-unresolved.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Well, I could check in with junkyard guy and see if he's got a used driver's side or put the stock ones back in there. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff.</p>
+  
+  
+  <br><br>
+          
+  <li><b>Length 00:00:46</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/owner-advising-me-on-how-to-repair-damage-he-was-hired-to-fix.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  How much are these pieces? *** No idea. I haven't even looked them up. You know, I figured the aftermarket ones of those ought to fit. They should just pop in there. And so if you want to just check to see how much they are. I mean it's easy enough just to pop them in place. *** That's what I thought I did that's for the ones that I brought *** Well they're just for the wrong front end. Okay, and sometimes BMW will change the production and how they do things in the middle of a year. It can be the same year model of car, but they'll change parts in the middle of production on how stuff is so you got to really watch the production dates to get that stuff done.</p>
     
   
   <br><br>
-
-  <li><b>Length 00:02:43</b> | 
-    <a href="https://github.com/blackforestwerkshopexperience/customer/audio/discussion-about-why-the-cost-kept-going-up.mp3" target="_blank">
+          
+  
+  <li><b>Length 00:00:17</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/owner-changes-story-admits-he-knew-about-the-fog-lights-flickering-before-i-pointed-it-out-to-him.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Flickering, flickering *** That's just weird. *** I didn't really ever notice it until I got down on my knees and was looking at it that close with one of the guys that they flickered and I thought they were talking about when they just ran.</p>
+  
+  <br><br>
+  
+  
+  <li><b>Length 00:03:29</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/confusing-conversation-when-reviewing-the-final-invoice-i-dont-understand-anything-that-the-owner-is-explaining.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Uhm, there's a chance that you can call this insurance company and tell them hey, you guys didn't pay the administrative fees for all the legwork Lee had to do on this thing. *** Can you document that out? So I know what I can ask them for like realistically because if I call them and say that then they might say well, how many hours did Lee do this? And I have Oh, is that marked down on there already? *** Yeah *** Okay. *** But I had asked them for 250 bucks only put 150 on there. And mostly that was in dealing with the insurance company but at least I got 415 bucks out of them which was good. The other part that they had screwed up was that there was an aluminum piece behind the front bumper that was bent back. And so they found a used one somewhere up in Fort Worth. And I think they said it was like 130 bucks. They said alright, it's 130 bucks. We'll pay you 25% Extra. Okay, what about shipping? Who's gonna pay for that? You know, so what am I gonna do? You know, jump through these hoops again, I have to call them. You know, it's just a nightmare dealing with these people, you know that. And so, I found one that I could have delivered, it costs a little bit more money between that part and adding the 25% that came up to the price of a new one, I was like, well, probably should have just put a new one in it, but it doesn't matter, it's as good as new. It's just an aluminum bar that goes back there. So the long and short of it is, is that they didn't pay enough for that part. *** They didn't pay enough for the the thing behind the bumper? *** Yeah, I'll highlight it. This one right here. I'm gonna just... I'm not going to highlight the 150 because they'll want a copy of this maybe. And so I'm not going to bring that to their attention by highlighting it. And you can tell them that you know, you you can tell them Well, I still owe him the 250 bucks. I need you to send me that money so I can pay him and if they send it to you, keep it and then the supplement thing they should have emailed you a copy of that supplement did they? It's when they do a supplement what they do is they send you the entire estimate over again and added on those things I don't know if they ever sent you a copy of that *** I would have to check with them. *** You can check with them and see things send you a copy and then that way you can see exactly how much of that $415 They have budgeted for that I think this is gonna be a little bit more so they can owe you a few more bucks for that.</p>
+  
+  
+  <br><br>
+  
+  
+  <li><b>Length 00:01:49</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/finding-out-how-much-was-owed.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  There's a balance of $2268.46 *** Oh, uh, you told me $2051.96 and that was the, this is the amount that you told me on the phone before I came here so the check was pre-cut. *** Okay. So then that's still gonna leave *** Yeah, twenty, that's the amount that you gave me on the phone this afternoon right when you said that my car was ready to come pick up *** Yeah, I totaled it up but I just didn't have that used headlight put in there. *** I'd have to go home to get another check or, I came prepared with the amount that you told me to bring. *** Okay. Well, I probably should have called you and told you before you came down here. *** Is that *** So that's how much the remaining is *** Can I uhm, can I borrow one of these *** Sure. And I apologize I had completely forgotten about that. Josh normally puts parts on tickets. I really don't do his job. He usually puts them there, but he wasn't involved in getting these headlights. *** Oh, okay *** and then after he had it all totaled up he was like Hey, did you get that headlight on there? Nope, that's ok, ha ha, shit!</p>
+  
+  <br><br>
+  
+  
+  <li><b>Length 00:00:05</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/your-car-looks-good.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Anything else I should know about my car? *** The car looks good.</p>
+  
+  
+  <br><br>
+  
+  <li><b>Length 00:01:02</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/implies-the-delay-was-my-my-fault-extended-rental-car-time-wasnt-easy.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Alright, well, I think apologizing for taking as long as it is did might be an order so, I'm sorry it dragged out as long as it did. And uh, my tip for the future, never tell anybody to take their time. It is like, well, you know not hurry. I got this rental car for as long as I need it. And you know, honestly, I didn't think you were in a rental car. I thought you were in a family member's car. Somebody loaned you a car? I didn't think rental car was really anywhere in the picture. *** Oh, no, it was a big ordeal when I dropped my car off to get the rental car here. *** Right? I remember that. Yeah, so but I figured that maybe you had access to the car because honestly, insurance companies and rental cars they're usually like after 10 days. They're done. They don't want to pay any more for the rental car. So whatever you did to get a rental car for as long as you had it. You definitely got way more than I've ever seen anybody else get. *** It wasn't easy.</p>
+  
+  
+  <br><br>
+  
+  
+  <li><b>Length 00:01:08</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/rear-bumper-not-repaired-front-bumper-not-replaced-trying-to-get-more-from-insurance.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  So uh, so yeah, and I know that the end bodywork isn't an absolutely perfect you know, we talked about that in the beginning. You know Dominique does the workout side over there? *** Well the end body work wasn't done at all. You said that you skipped that part all together. *** Well the the front end. The front bumper and all that stuff. *** I thought you were talking about the rear bumper. ***
+  Oh yeah, fixing that whole front bumper, you know, I hope you like it, I think he did a pretty good job. All things considered considering what he had to work with that front bumper was pretty mangled up. And he got it straightened up pretty good. You know, just stay away from the curb. *** So he didn't, he didn't have to, like replace it with a bumper cover. Like, you don't have to replace any of the parts for the bumper, you fixed your original one. He fixed the original one he didn't actually buy. So then you just needed that little metal piece behind the bumper, or you didn't actually need any parts for the bumper. *** Yeah. And honestly, I mean, I I called in, I was trying to get more money out of the insurance company for you, I wanted to get as much as I could out of them for you to discount this down. And I didn't get it nearly as much as I tried to.</p>
+    
+  
+  <br><br>
+  
+  
+  <li><b>Length 00:00:25</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/i-have-concerns-that-my-fog-light-cables-are-just-hanging-and-not-secured-to-something.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+    So the original cables, I guess the original cables that were plugged into the foglights, were they hanging, or were they somehow just pushed up like taped or to something on the inside of the car? *** No, they were just kind of hanging down there. *** The wires were always just hanging down there. *** Okay *** They're just always kind of flopping around. *** Maybe I'll go buy some duct tape and hang them up or something. *** I'm sure they'll be fine.</p>
+    
+  <br><br>
+  
+  
+  <li><b>Length 00:00:24</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/referring-me-to-the-salvage-guy-to-buy-parts-for-repairs-he-was-suppossed-to-do.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+    Right, we'll check with Russell and ask if he has, send him a picture of your front bumper and say, I would like to know if you have a used grille. For my front bumper *** The fog light trim *** Yes. If you have that. Okay, if you're not happy with those fog lights, then ask them also. So do you have a used driver side fog light.</p>
+    
+  
+  <br><br>
+  
+  <li><b>Length 00:00:19</b> | 
+    <a href="https://blackforestwerkshopexperience.github.io/customer/audio/i-dont-ever-get-involved-in-body-repair-stuff.mp3" target="_blank">
     Play Audio Clip</a><br> 
-
+  
     <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-So actually, I'm kind of confused as why was before you had the disagreement with the insurance company, why was my pickup price $826. The one that you said in the email you're like, Okay, I think we're ready to go. We're all ready to start deal. Oh, $826 Why is it now two over $2000. *** us talking and he was saying something about that you didn't want to get the hood fixed. *** Was that was another part of the insurance thing. I Dominique, when he remembered he was standing out here with *** No, I mean, no, this is this is like beyond that, like after we had already been talking for well over like 45 days in, and I got an email from you and we thought that everything with the insurance company was fine. And you sent me an email saying, Okay, I think we're good to go. Are you ready to pay me? Do I have your permission to start working on the car? And I said yes. And you're like, great, it'll be $826, why is it now $2200 *** Yeah *** Because nothing in the car is change that the only thing that's changed is that I *** A lot of it was taken the front bumper back apart and put it in this original headlights back in *** That bumped it up over $1,300? *** I've got it all itemized, and there wasn't that much. There's that other bumper piece. And then trying to get more out of the insurance company I had planned on getting a certain amount from the insurance company I need to get that much out of them. And that was going to reduce how much you're going to owe. *** Because that's more than well over double it goes from the $825 to $2050 about $2156 to two over $2200 now so it's just like every time I talk to you the numbers go up and I'm just really confused how it went from $825 like we had an email that said we can do it we're ready to go in $825 is going to be good because I now now you're quoting *** no part of it was Dominique hadn't planned on repairing the hood because he was remembering and you know I based my original conversation with you off of what he had told me he *** was gonna charge but I never talked to him I only talked to you  *** no, you did talk to him that day he was here *** he is he's not even, yeah, you're the person that is the, is, I still have someplace I need to be a five o'clock though so oh I'm so sorry. I don't mean to block your way</p>
+      Alright, I'm glad you're finally back in your car *** Me too *** Yeah, I think Josh would prefer that I don't ever get involved in any body repair stuff. I'm just trying to help people out, you know, try to help you out with a good price to get this stuff done.</p>
       
+    
+    <br><br>
+  
+    <li><b>Length 00:02:43</b> | 
+      <a href="https://blackforestwerkshopexperience.github.io/customer/audio/discussion-about-why-the-cost-kept-going-up.mp3" target="_blank">
+      Play Audio Clip</a><br> 
+  
+      <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  So actually, I'm kind of confused as why was before you had the disagreement with the insurance company, why was my pickup price $826. The one that you said in the email you're like, Okay, I think we're ready to go. We're all ready to start deal. Oh, $826 Why is it now two over $2000. *** us talking and he was saying something about that you didn't want to get the hood fixed. *** Was that was another part of the insurance thing. I Dominique, when he remembered he was standing out here with *** No, I mean, no, this is this is like beyond that, like after we had already been talking for well over like 45 days in, and I got an email from you and we thought that everything with the insurance company was fine. And you sent me an email saying, Okay, I think we're good to go. Are you ready to pay me? Do I have your permission to start working on the car? And I said yes. And you're like, great, it'll be $826, why is it now $2200 *** Yeah *** Because nothing in the car is change that the only thing that's changed is that I *** A lot of it was taken the front bumper back apart and put it in this original headlights back in *** That bumped it up over $1,300? *** I've got it all itemized, and there wasn't that much. There's that other bumper piece. And then trying to get more out of the insurance company I had planned on getting a certain amount from the insurance company I need to get that much out of them. And that was going to reduce how much you're going to owe. *** Because that's more than well over double it goes from the $825 to $2050 about $2156 to two over $2200 now so it's just like every time I talk to you the numbers go up and I'm just really confused how it went from $825 like we had an email that said we can do it we're ready to go in $825 is going to be good because I now now you're quoting *** no part of it was Dominique hadn't planned on repairing the hood because he was remembering and you know I based my original conversation with you off of what he had told me he *** was gonna charge but I never talked to him I only talked to you  *** no, you did talk to him that day he was here *** he is he's not even, yeah, you're the person that is the, is, I still have someplace I need to be a five o'clock though so oh I'm so sorry. I don't mean to block your way</p>
+        
+      <br><br>
+      
+    
+  <li><b>Length 00:00:07</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/back-when-we-had-a-body-shop.mp3" target="_blank">
+  Play Audio Clip "A"</a>, and<br>
+  <b>Length 00:00:35</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/jeffs-bodyshop-booked-till-january.mp3" target="_blank">
+  Play Audio Clip "B"</a>, and<br>
+  <b>Length 00:00:19</b> | 
+    <a href="https://blackforestwerkshopexperience.github.io/customer/audio/i-dont-ever-get-involved-in-body-repair-stuff.mp3" target="_blank">
+    Play Audio Clip "C"</a> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION "A"</b><br>
+  And this was back we actually had a body shop that big white building over there was our body shop. We used to be across the street.</p>
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION "B"</b><br>
+    The reality of it is like, if you wanted this car, like looking like it just came off the showroom floor. Then it would have gone over to Jeff's Body Shop. *** Jeff's Body Shop *** Jeff's body shop? *** He does immaculate work. *** Where's he located? *** He's overthere on Lamar, and so had we gone that route. What would have happened in the car would still be there, by the way. *** They have a long line? *** Yeah, I just called it a one on one, and I can't even get the car over there until January. </p>
+  
+    <p class="audiotext"><b>AUDIO TRANSCRIPTION "C"</b><br>
+      Alright, I'm glad you're finally back in your car *** Me too *** Yeah, I think Josh would prefer that I don't ever get involved in any body repair stuff. I'm just trying to help people out, you know, try to help you out with a good price to get this stuff done.</p>
+  
+  
+  <br><br>
+  
+  <li><b>Length 00:00:39</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/i-charge-the-hell-out-of-them-for-having-to-mess-with-it.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Or put the stock ones back in there. To go back home with this. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff. *** That's the same stuff that I think StateFarm asks you to buy though aftermarket stuff. *** But they do that crap all the time. And you know what, I charge the hell out of them for having to mess with it. I get them from all kinds of computer time and testing and diagnosing and blah, blah, blah and ultimately call and say now do you want me to put the stock ones in?</p>
+  
+  
+  <br><br>
+    
+  
+  <li><b>Length 00:01:00</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/build-a-bmw-by-ordering-each-part-alone-costs-half-a-million-dollars.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  That guy just left here driving since I got him I used one of these controller wheels. And he said you know what? After I'd warned him about use parts he said just order a new one Lee. I said, thank you, Mike. problem with these cars when they're on the showroom floor or What was this about a $40,000 car 35,000 40,000 maybe 45,000. *** For a BMW, I'm sure. Yeah. *** But if you went to the parts counter and said, I want to buy that car, but I want to buy it in parts because I'm gonna go home and build it myself because I like building cars. And they sold you all the parts for this car over the counter. This will turn into a half a million dollar car this in parts alone the parts prices will cost probably a half a million dollars.</p>
+    
+  <br><br>
+  
+    
+  <li><b>Length 00:02:10</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/they-paid-us-twice-to-do-that-job.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Some guy came in. And I think it was GEICO or Progressive. And they wouldn't let us put genuine parts on the guy's car. And I told him I said you can pay the difference. So we'll use genuine parts. I said, But these aren't gonna fit, right. And he was like, Well, I'm not paying any more than my deductible. So use whatever they tell you to use, which was the right way for him to go. Because the way it worked out was when he went to came pick up this car. He was running his hand down, like look, there's a gap here, right there and blah, blah. And he want us to try to readjust them. And I said, now we've adjusted them as good as they can be. I said now what you have to do is call your adjuster meeting back over here. I said I want you to meet him with me here. You don't want to meet him by yourself because it'll snowball you. So fortunately, that meeting worked out. The guy showed up with his car on time the adjuster was there on time. And so the adjuster actually admitted yeah, these don't fit. And he looked at me and he said, Why didn't y'all test it these pieces before you painted it? And I said show me on your paperwork that you were gonna pay me to test fit this stuff. I said you already know I said you just admitted that, you know, these aftermarket parts don't fit. And now you're telling me I should have tested them? I said no, I don't do that. You know, unless you're gonna pay me to do it. I'm not gonna do it. The adjuster was like, well, I'll pay for factory parts, but I'm not paying you to paint him again, not flicked at the owner of the car, I said, I hope you like Primer Gray, because that's how they come. And if he's not paying me to paint them, then we're not painting them. And the poor owner of the car, you know, the consumer shouldn't get stuck in the middle of this garbage. And that poor guy was like, he didn't know what to do. And the adjuster said, I can't believe how some people run their businesses. And I said, Now you just said something that I think we both can agree on. I said, I can't believe how you guys run your business. And he finally agreed to completely redo the whole front end work that we had done. So we put factory parts on, we repainted it, and everything. And they paid us twice to do that job.</p>
+  
+  
+  <br><br>
+    
+  
+   <li><b>Length 00:01:59</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/recruiting-grooming-paying-customers-to-assist-in-insurance-fraud.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  We had one insurance company. So they were given us the runaround, on just replacing a windshield. And after going through three different windshield companies, we finally got the windshield in and it took months to get this done months. It was unbelievable how long, the car would still be here. If I wasn't the one who kept calling saying what do I want to do whatever I want to do. And then the way it normally works, is whatever the stuff is they tell us to use, they already know how much our cost is. And they pay us 25% above whatever our cost is for our profit margin. And the windshield, the guy's car. And so I called Binswanger. I said, Hey, you guys didn't leave an invoice, I need to pay you for this. And they said, Oh, we've already been paid. I said, Who paid you and they said, well, the insurance company is paying us directly. So they totally screwed me out of any penny I ever hoped to make on getting that windshield done, you know, for all my management stuff and everything. And so I called the owner and told him, I said, I need you to help me out with this. I said, I'm not going to do this. But I want you to kind of go along with it. I said you don't owe me any favors. This is a business. I said, so what I'm going to do is I'm going to pay you 25% or whatever I get out of these bastards. And they said, Okay, what do you want me to do? I said, call him up and tell them that I'm going to sell your car to pay for the storage fees. Because I've been storing the car here while they're guys not been getting the jobs done. And in the end, the insurance company paid me over $3,000 for storage. And if they would let me just do the windshield, it would have been 1200 bucks. And so I paid the owner of the car, I didn't charge him his deductible, I gave him an extra 250 bucks, and I kept the rest of the money. And that's how it goes with this insurance stuff. I mean, it's it's crazy.</p> 
+     
+  
+  <br><br>
+  
+  <li><b>Length 00:00:27</b> | 
+    <a href="https://blackforestwerkshopexperience.github.io/customer/audio/rats-temperature-sensor.mp3" target="_blank">
+    Play Audio Clip</a><br> 
+    
+  
+    
+    <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+      There was a temperature sensor on one guy's car the other day, and a mouse had gotten in there and chewed it up, and it had been like that for months. He brought the car in and we fixed it, and then he called me two days later and said I don't think your guy did a good job, this temperature sensor is not reading right again. They brought it over. We took the new temperature sensor out it was chewed up again. I said, your little friends the rats like this temperature sensor.</p> 
+  
+    
     <br><br>
     
-  
-<li><b>Length 00:00:07</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/back-when-we-had-a-body-shop.mp3" target="_blank">
-Play Audio Clip "A"</a>, and<br>
-<b>Length 00:00:35</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/jeffs-bodyshop-booked-till-january.mp3" target="_blank">
-Play Audio Clip "B"</a>, and<br>
-<b>Length 00:00:19</b> | 
-  <a href="https://github.com/blackforestwerkshopexperience/customer/audio/i-dont-ever-get-involved-in-body-repair-stuff.mp3" target="_blank">
-  Play Audio Clip "C"</a> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION "A"</b><br>
-And this was back we actually had a body shop that big white building over there was our body shop. We used to be across the street.</p>
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION "B"</b><br>
-  The reality of it is like, if you wanted this car, like looking like it just came off the showroom floor. Then it would have gone over to Jeff's Body Shop. *** Jeff's Body Shop *** Jeff's body shop? *** He does immaculate work. *** Where's he located? *** He's overthere on Lamar, and so had we gone that route. What would have happened in the car would still be there, by the way. *** They have a long line? *** Yeah, I just called it a one on one, and I can't even get the car over there until January. </p>
-
-  <p class="audiotext"><b>AUDIO TRANSCRIPTION "C"</b><br>
-    Alright, I'm glad you're finally back in your car *** Me too *** Yeah, I think Josh would prefer that I don't ever get involved in any body repair stuff. I'm just trying to help people out, you know, try to help you out with a good price to get this stuff done.</p>
-
-
-<br><br>
-
-<li><b>Length 00:00:39</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/i-charge-the-hell-out-of-them-for-having-to-mess-with-it.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Or put the stock ones back in there. To go back home with this. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff. *** That's the same stuff that I think StateFarm asks you to buy though aftermarket stuff. *** But they do that crap all the time. And you know what, I charge the hell out of them for having to mess with it. I get them from all kinds of computer time and testing and diagnosing and blah, blah, blah and ultimately call and say now do you want me to put the stock ones in?</p>
-
-
-<br><br>
-  
-
-<li><b>Length 00:01:00</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/build-a-bmw-by-ordering-each-part-alone-costs-half-a-million-dollars.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-That guy just left here driving since I got him I used one of these controller wheels. And he said you know what? After I'd warned him about use parts he said just order a new one Lee. I said, thank you, Mike. problem with these cars when they're on the showroom floor or What was this about a $40,000 car 35,000 40,000 maybe 45,000. *** For a BMW, I'm sure. Yeah. *** But if you went to the parts counter and said, I want to buy that car, but I want to buy it in parts because I'm gonna go home and build it myself because I like building cars. And they sold you all the parts for this car over the counter. This will turn into a half a million dollar car this in parts alone the parts prices will cost probably a half a million dollars.</p>
-  
-<br><br>
-
-  
-<li><b>Length 00:02:10</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/they-paid-us-twice-to-do-that-job.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Some guy came in. And I think it was GEICO or Progressive. And they wouldn't let us put genuine parts on the guy's car. And I told him I said you can pay the difference. So we'll use genuine parts. I said, But these aren't gonna fit, right. And he was like, Well, I'm not paying any more than my deductible. So use whatever they tell you to use, which was the right way for him to go. Because the way it worked out was when he went to came pick up this car. He was running his hand down, like look, there's a gap here, right there and blah, blah. And he want us to try to readjust them. And I said, now we've adjusted them as good as they can be. I said now what you have to do is call your adjuster meeting back over here. I said I want you to meet him with me here. You don't want to meet him by yourself because it'll snowball you. So fortunately, that meeting worked out. The guy showed up with his car on time the adjuster was there on time. And so the adjuster actually admitted yeah, these don't fit. And he looked at me and he said, Why didn't y'all test it these pieces before you painted it? And I said show me on your paperwork that you were gonna pay me to test fit this stuff. I said you already know I said you just admitted that, you know, these aftermarket parts don't fit. And now you're telling me I should have tested them? I said no, I don't do that. You know, unless you're gonna pay me to do it. I'm not gonna do it. The adjuster was like, well, I'll pay for factory parts, but I'm not paying you to paint him again, not flicked at the owner of the car, I said, I hope you like Primer Gray, because that's how they come. And if he's not paying me to paint them, then we're not painting them. And the poor owner of the car, you know, the consumer shouldn't get stuck in the middle of this garbage. And that poor guy was like, he didn't know what to do. And the adjuster said, I can't believe how some people run their businesses. And I said, Now you just said something that I think we both can agree on. I said, I can't believe how you guys run your business. And he finally agreed to completely redo the whole front end work that we had done. So we put factory parts on, we repainted it, and everything. And they paid us twice to do that job.</p>
-
-
-<br><br>
-  
-
- <li><b>Length 00:01:59</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/recruiting-grooming-paying-customers-to-assist-in-insurance-fraud.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-We had one insurance company. So they were given us the runaround, on just replacing a windshield. And after going through three different windshield companies, we finally got the windshield in and it took months to get this done months. It was unbelievable how long, the car would still be here. If I wasn't the one who kept calling saying what do I want to do whatever I want to do. And then the way it normally works, is whatever the stuff is they tell us to use, they already know how much our cost is. And they pay us 25% above whatever our cost is for our profit margin. And the windshield, the guy's car. And so I called Binswanger. I said, Hey, you guys didn't leave an invoice, I need to pay you for this. And they said, Oh, we've already been paid. I said, Who paid you and they said, well, the insurance company is paying us directly. So they totally screwed me out of any penny I ever hoped to make on getting that windshield done, you know, for all my management stuff and everything. And so I called the owner and told him, I said, I need you to help me out with this. I said, I'm not going to do this. But I want you to kind of go along with it. I said you don't owe me any favors. This is a business. I said, so what I'm going to do is I'm going to pay you 25% or whatever I get out of these bastards. And they said, Okay, what do you want me to do? I said, call him up and tell them that I'm going to sell your car to pay for the storage fees. Because I've been storing the car here while they're guys not been getting the jobs done. And in the end, the insurance company paid me over $3,000 for storage. And if they would let me just do the windshield, it would have been 1200 bucks. And so I paid the owner of the car, I didn't charge him his deductible, I gave him an extra 250 bucks, and I kept the rest of the money. And that's how it goes with this insurance stuff. I mean, it's it's crazy.</p> 
-   
-
-<br><br>
-
-<li><b>Length 00:00:27</b> | 
-  <a href="https://github.com/blackforestwerkshopexperience/customer/audio/rats-temperature-sensor.mp3" target="_blank">
+    
+  <li><b>Length 00:00:20</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/another-example-of-redoing-work-buy-parts-twice-do-labor-twice-reason-aftermarket-parts.mp3" target="_blank">
   Play Audio Clip</a><br> 
   
-
-  
   <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-    There was a temperature sensor on one guy's car the other day, and a mouse had gotten in there and chewed it up, and it had been like that for months. He brought the car in and we fixed it, and then he called me two days later and said I don't think your guy did a good job, this temperature sensor is not reading right again. They brought it over. We took the new temperature sensor out it was chewed up again. I said, your little friends the rats like this temperature sensor.</p> 
-
+  That guy just left here driving since I got him I used one of these controller wheels. And he said you know what? After I'd warned him about use parts he said just order a new one Lee. I said, thank you, Mike.</p>
+    
+  <ul> 
+  <li><b>(continuation) Length 00:01:10</b> | 
+  <a href="https://blackforestwerkshopexperience.github.io/customer/audio/customer-mike-called-in-wanting-to-know-if-his-repairs-were-done-with-new-parts.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Black Forest *** Hey, Mike, yeah good, Lee. *** Alright man. I got a total of $428.41. *** It's, what do you mean? The whole knob is all brand new. *** Oh, is it around the edge? Yeah, okay, well, I guess he could have done a better job of cleaning it before he put that new one in there. Yeah, yeah, it's definitely the new one, yeah. Okay, bye, okay, thank you.</p>
+    </li>
   
-  <br><br>
+  </ol>
   
   
-<li><b>Length 00:00:20</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/another-example-of-redoing-work-buy-parts-twice-do-labor-twice-reason-aftermarket-parts.mp3" target="_blank">
-Play Audio Clip</a><br> 
-
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-That guy just left here driving since I got him I used one of these controller wheels. And he said you know what? After I'd warned him about use parts he said just order a new one Lee. I said, thank you, Mike.</p>
   
-<ul> 
-<li><b>(continuation) Length 00:01:10</b> | 
-<a href="https://github.com/blackforestwerkshopexperience/customer/audio/customer-mike-called-in-wanting-to-know-if-his-repairs-were-done-with-new-parts.mp3" target="_blank">
-Play Audio Clip</a><br> 
-<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
-Black Forest *** Hey, Mike, yeah good, Lee. *** Alright man. I got a total of $428.41. *** It's, what do you mean? The whole knob is all brand new. *** Oh, is it around the edge? Yeah, okay, well, I guess he could have done a better job of cleaning it before he put that new one in there. Yeah, yeah, it's definitely the new one, yeah. Okay, bye, okay, thank you.</p>
-  </li>
+  <p><br></p>
+  <center><a href="#top"><img src="https://blackforestwerkshopexperience.github.io/customer/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+  <h2><a name="openrecords">OPEN RECORDS</a></h2>
+  
+    <ul>
+      <li>Texas Office of the Attorney General | Submitted: 01/16/2021 | Complaint number: CGS-313672</a></li>
+      <li>Federal Trade Commision | Submitted: 01/18/2021 | Report Number: 143817218</a></li>
+  </ul>
+  
+  
+  
+  <center><a href="#top"><img src="https://blackforestwerkshopexperience.github.io/customer/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+  
+  <p><br></p>
+  
+  
 
-</ol>
-
-
-
-<p><br></p>
-<center><a href="#top"><img src="https://github.com/blackforestwerkshopexperience/customer/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
-<h2><a name="openrecords">OPEN RECORDS</a></h2>
-
-  <ul>
-    <li>Texas Office of the Attorney General | Submitted: 01/16/2021 | Complaint number: CGS-313672</a></li>
-    <li>Federal Trade Commision | Submitted: 01/18/2021 | Report Number: 143817218</a></li>
-</ul>
-
-
-
-<center><a href="#top"><img src="https://github.com/blackforestwerkshopexperience/customer/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
-
-<p><br></p>
-
-
-<!-- Default Statcounter code for Black Forest Werkshop Experience
-https://blackforestwerkshopexperience.github.io/customer/ -->
-<script type="text/javascript">
-    var sc_project=12763605; 
-    var sc_invisible=1; 
-    var sc_security="607008b2"; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="site stats"
-    href="https://statcounter.com/" target="_blank"><img class="statcounter"
-    src="https://c.statcounter.com/12763605/0/607008b2/1/" alt="site stats"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+  <!-- Default Statcounter code for Black Forest Werkshop Experience
+  https://blackforestwerkshopexperience.github.io/customer/ -->
+  <script type="text/javascript">
+      var sc_project=12763605; 
+      var sc_invisible=1; 
+      var sc_security="607008b2"; 
+      </script>
+      <script type="text/javascript"
+      src="https://www.statcounter.com/counter/counter.js" async></script>
+      <noscript><div class="statcounter"><a title="site stats"
+      href="https://statcounter.com/" target="_blank"><img class="statcounter"
+      src="https://c.statcounter.com/12763605/0/607008b2/1/" alt="site stats"
+      referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+      <!-- End of Statcounter Code -->
